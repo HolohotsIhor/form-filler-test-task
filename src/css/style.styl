@@ -1,0 +1,86 @@
+@import "libs/reset.styl"
+@import "libs/fonts.styl"
+@import "libs/variables.styl"
+
+html
+  font-family 'Open Sans'
+  font-size 16px
+
+body
+  background-color $violet
+
+.page-section
+  padding-top 57px
+
+  &__container
+    padding 0 10px
+
+    @media (min-width $screen-sm)
+      padding 0
+
+  &__center
+    text-align center
+
+  &__article
+    font-weight 700
+    font-size 1.5rem
+    line-height 32px
+    color $color-dark
+    margin-bottom 20px
+
+  &__logo
+    display inline-block
+    overflow hidden
+    width 148px
+    height 30px
+
+.form
+  display flex
+  flex-direction column
+  background-color $white
+  padding 24px
+  gap 20px
+  box-shadow 0 8px 40px rgba(0, 0, 0, 0.1)
+  margin-top 39px
+  border-radius 8px
+
+  @media (min-width $screen-sm)
+    max-width 552px
+    max-height 504px
+    margin 69px auto 0
+    padding 48px
+
+  &__item
+    margin-bottom 20px
+
+  &__label
+    font-size 14px
+    line-height 1.5rem
+    color $color-dark
+    font-weight 700
+    margin-bottom 4px
+
+  &__input
+    display flex
+    width 100%
+    box-sizing border-box
+    border: 1px solid #AAAAAA;
+    border-radius: 4px;
+    padding 8px
+    transition border-color .2s
+    color $color-dark
+
+    &:hover
+      border 1px solid $grey
+
+    &:focus
+      outline none
+      border 1px solid $grey
+
+  &__message
+    font-size 12px
+    line-height: 1rem
+    color $red
+    font-weight 600
+    padding-left 8px
+    //display none
