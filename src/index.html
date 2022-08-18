@@ -4,29 +4,65 @@
         <div class="page-section__container">
             <div class="page-section__center">
                 <a class="page-section__logo" href="/">
-                    <img src="./img/logo.svg" alt="logo">
+                    <img src="./img/logo.svg" width="148px" height="30px" alt="logo">
                 </a>
             </div>
             <div class="form">
-                <form action="#" class="form__item">
+                <form action="#">
                     <h1 class="page-section__article">Log in to airSlate</h1>
-                    <div class="form__item error">
-                        <label class="form__label" for="email">Email address</label>
-                        <input class="form__input" id="email" name="email" type="text" placeholder="Input">
-                        <div class="form__message">Validation</div>
-                    </div>
                     <div class="form__item">
                         <label class="form__label" for="email">Email address</label>
                         <input class="form__input" id="email" name="email" type="text" placeholder="Input">
                         <div class="form__message">Validation</div>
                     </div>
-                    <div class="form__item_">
-                        <p>
-                            By clicking Log in, you agree to the Terms of Services and Privacy Policy, including receipt
-                            of emails from of us about our service.
+                    <div class="form__item">
+                        <label class="form__label" for="password">Password</label>
+                        <input class="form__input" id="password" name="password" type="text" placeholder="Input">
+                        <div class="form__message">Validation</div>
+                    </div>
+                    <div class="form__item">
+                        <p class="form__terms">
+                            By clicking Log in, you agree to the
+                            <a href="https://www.pdffiller.com/en/terms_of_services.htm"
+                               class="page-section__link"
+                               target="_blank">Terms of Services
+                            </a>
+                            and Privacy Policy, including receipt of emails from of us about our service.
                         </p>
                     </div>
+                    <a class="form__button" id="btnSubmit">
+                        Log in
+                    </a>
                 </form>
+                <div>
+                    <p class="form__social-text">
+                        or continue with your social accounts
+                    </p>
+                    <div class="form__social-container">
+                        <a href="https://www.facebook.com/" class="form__social-item" target="_blank">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12.5" cy="12" r="10" fill="#1877F2"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.3926 14.8906L16.8359 12H14.0625V10.1242C14.0625 9.33334 14.4499 8.5625 15.6921 8.5625H16.9531V6.10156C16.9531 6.10156 15.8087 5.90625 14.7146 5.90625C12.4304 5.90625 10.9375 7.29063 10.9375 9.79688V12H8.39844V14.8906H10.9375V21.8785C11.4466 21.9584 11.9684 22 12.5 22C13.0316 22 13.5534 21.9584 14.0625 21.8785V14.8906H16.3926Z" fill="white"/>
+                            </svg>
+                            Facebook
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.pdffiller&referrer=utm_source%3Dmobile_overlay_on_editor_pages" class="form__social-item" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.48C13.69 6.48 14.83 7.21 15.48 7.82L18.02 5.34C16.46 3.89 14.43 3 12 3C8.47999 3 5.43999 5.02 3.95999 7.96L6.86999 10.22C7.59999 8.05 9.61999 6.48 12 6.48Z" fill="#EA4335"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.64 12.2C20.64 11.46 20.58 10.92 20.45 10.36H12V13.7H16.96C16.86 14.53 16.32 15.78 15.12 16.62L17.96 18.82C19.66 17.25 20.64 14.94 20.64 12.2Z" fill="#4285F4"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.88 13.78C6.69 13.22 6.58 12.62 6.58 12C6.58 11.38 6.69 10.78 6.87 10.22L3.96 7.96001C3.35 9.18001 3 10.55 3 12C3 13.45 3.35 14.82 3.96 16.04L6.88 13.78Z" fill="#FBBC05"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21C14.43 21 16.47 20.2 17.96 18.82L15.12 16.62C14.36 17.15 13.34 17.52 12 17.52C9.62 17.52 7.6 15.95 6.88 13.78L3.97 16.04C5.45 18.98 8.48 21 12 21Z" fill="#34A853"/>
+                            </svg>
+                            Google
+                        </a>
+                        <a href="https://apps.apple.com/app/apple-store/id571613512" class="form__social-item" target="_blank">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1014 2C16.1925 3.14445 15.8165 4.27799 15.0532 5.1599C14.3128 6.04638 13.1909 6.55699 12.0092 6.54528C11.9341 5.43378 12.321 4.3391 13.0848 3.50237C13.8583 2.6543 14.9354 2.11788 16.1014 2ZM19.9601 8.58033C18.5732 9.41143 17.7198 10.8771 17.6988 12.4639C17.7008 14.2591 18.8037 15.8792 20.5 16.5785C20.1738 17.6115 19.682 18.5878 19.043 19.4711C18.1848 20.7224 17.285 21.945 15.8568 21.9676C15.1775 21.9829 14.719 21.7925 14.2413 21.5941C13.7429 21.3871 13.2236 21.1715 12.411 21.1715C11.5492 21.1715 11.0066 21.3941 10.4834 21.6087C10.0312 21.7942 9.59337 21.9738 8.97638 21.9988C7.61628 22.0479 6.57679 20.6632 5.68738 19.4235C3.9097 16.892 2.52549 12.2892 4.38123 9.15732C5.25267 7.63089 6.88206 6.66229 8.67324 6.60588C9.44464 6.5904 10.1849 6.88022 10.8338 7.13431C11.3301 7.32862 11.7731 7.50205 12.1358 7.50205C12.4546 7.50205 12.8852 7.33547 13.387 7.14134C14.1775 6.83554 15.1447 6.46136 16.1303 6.5622C17.6619 6.60891 19.0812 7.35682 19.9601 8.58033Z" fill="black"/>
+                            </svg>
+                            Apple
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

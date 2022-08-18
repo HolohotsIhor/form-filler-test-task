@@ -1,0 +1,41 @@
+html
+  font-family 'Open Sans'
+  font-size 16px
+
+body
+  background-color $violet
+
+.error
+  .form__message
+    display block
+
+.page-section
+  padding-top 57px
+
+  &__container
+    padding 0 10px
+
+    @media (min-width $screen-sm)
+      padding 0
+
+  &__center
+    text-align center
+
+  &__article
+    font-weight 700
+    font-size 1.5rem
+    line-height 32px
+    color $color-dark
+    margin-bottom 20px
+
+  &__logo
+    display inline-block
+    overflow hidden
+    width 148px
+    height 30px
+
+  &__link
+    color $color-link
+
+    &:hover
+      color $color-link-hover

@@ -1,57 +1,29 @@
 @import "libs/reset.styl"
 @import "libs/fonts.styl"
 @import "libs/variables.styl"
-
-html
-  font-family 'Open Sans'
-  font-size 16px
-
-body
-  background-color $violet
-
-.page-section
-  padding-top 57px
-
-  &__container
-    padding 0 10px
-
-    @media (min-width $screen-sm)
-      padding 0
-
-  &__center
-    text-align center
-
-  &__article
-    font-weight 700
-    font-size 1.5rem
-    line-height 32px
-    color $color-dark
-    margin-bottom 20px
-
-  &__logo
-    display inline-block
-    overflow hidden
-    width 148px
-    height 30px
+@import "libs/global.styl"
 
 .form
   display flex
   flex-direction column
   background-color $white
   padding 24px
-  gap 20px
+  gap 40px
   box-shadow 0 8px 40px rgba(0, 0, 0, 0.1)
   margin-top 39px
   border-radius 8px
+  box-sizing border-box
 
   @media (min-width $screen-sm)
     max-width 552px
-    max-height 504px
     margin 69px auto 0
     padding 48px
 
   &__item
     margin-bottom 20px
+
+    &:last-child
+      margin-bottom 12px
 
   &__label
     font-size 14px
@@ -64,8 +36,8 @@ body
     display flex
     width 100%
     box-sizing border-box
-    border: 1px solid #AAAAAA;
-    border-radius: 4px;
+    border 1px solid #AAAAAA
+    border-radius 4px
     padding 8px
     transition border-color .2s
     color $color-dark
@@ -79,8 +51,100 @@ body
 
   &__message
     font-size 12px
-    line-height: 1rem
+    line-height 1rem
     color $red
     font-weight 600
     padding-left 8px
-    //display none
+    display none
+
+  &__terms
+    font-size 12px
+    line-height 16px
+    color $color-light
+
+  &__button
+    color white
+    font-weight 600
+    font-size 14px
+    line-height 16px
+    padding 12px 0
+    background-color orange
+    border 0
+    border-radius 4px
+    width 100%
+    cursor pointer
+    display block
+    text-align center
+    transition background-color .2s
+
+    &:hover
+      background-color $orange-hover
+
+  &__social-text
+    font-weight 600
+    font-size 14px
+    line-height 24px
+    margin-bottom 24px
+    text-align center
+    color $grey
+    position relative
+
+    &:before
+      content ""
+      position absolute
+      left 0
+      top 12px
+      background-color $border-color
+      border-radius 4px
+      height 1px
+      width 90px
+      display none
+
+      @media (min-width $screen-sm)
+        display block
+
+    &:after
+      content ""
+      position absolute
+      right 0
+      top 12px
+      background-color $border-color
+      border-radius 4px
+      height 1px
+      width 90px
+      display none
+
+      @media (min-width $screen-sm)
+        display block
+
+  &__social-container
+    display flex
+    align-items center
+    flex-direction column
+    gap 10px
+
+    @media (min-width $screen-sm)
+      flex-direction row
+      justify-content space-between
+      gap unset
+
+  &__social-item
+    display flex
+    flex-direction row
+    align-items center
+    width 144px
+    padding 8px 0
+    gap 10px
+    border-radius 4px
+    border 1px solid #AAAAAA
+    color $color-dark
+    font-weight 600
+    font-size 14px
+    line-height 24px
+    text-decoration none
+    justify-content center
+    transition border-color .2s
+    max-width 144px
+
+    &:hover
+      border 1px solid $grey
